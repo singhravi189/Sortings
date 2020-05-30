@@ -1,4 +1,5 @@
 #include<stdio.h>
+//Merge the SubArrays into main array
 void Merge(int *arr,int l,int m,int r)
 {
 	int n1=m-l+1;
@@ -38,6 +39,7 @@ void Merge(int *arr,int l,int m,int r)
 		p++;
 	}
 }
+//Recursive Calls
 void MergeSort(int * arr,int l,int r)
 {
 	if(l<r)
@@ -48,6 +50,7 @@ void MergeSort(int * arr,int l,int r)
 		Merge(arr,l,m,r);
 	}
 }
+//Main Function
 int main()
 {
 	int arr[]={11,8,7,9,5,6,4,3,2,1};
@@ -57,4 +60,4 @@ int main()
 		printf("%d\n",arr[i]);
 	return 0;
 }
-
+//EOF
